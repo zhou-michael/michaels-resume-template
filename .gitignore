@@ -1,0 +1,26 @@
+# Build output directory
+build/
+
+# TeX intermediate and auxiliary files
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.png
+!examples/*.png
+!examples/*.pdf
+*.pbm
+
+# LaTeX font and cache artifacts
+*.bbl
+*.blg
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Personal resume (local only, do not track in public template)
+resume.tex

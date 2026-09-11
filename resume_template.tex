@@ -1,0 +1,125 @@
+%!TEX program = latexmk
+% ==============================================================================
+% Michael Resume Template (resume_template.tex)
+% A clean, modern, ATS-compliant LaTeX resume template.
+%
+% ==============================================================================
+% PRESET LOOKS & AESTHETIC CONFIGURATIONS (Uncomment your favorite look)
+% ==============================================================================
+% Look 1: Modern Tech / Clean Slate (Default)
+%   Crisp modern Fira Sans typography with subtle slate-steel gray accents
+\documentclass[color=slate,divider=rule,bullet=dash,margin=standard,font=fira]{michael-resume}
+
+% Look 2: Academic & Executive Serif
+%   Distinguished Bitstream Charter serif with deep midnight navy accents
+% \documentclass[color=midnight,divider=rule,bullet=dash,margin=standard,font=charter]{michael-resume}
+
+% Look 3: Minimalist Charcoal & Compact
+%   Streamlined Source Sans Pro, dark graphite accents, compact margins
+% \documentclass[color=charcoal,divider=rule,bullet=dash,margin=compact,font=sourcesans]{michael-resume}
+
+% Look 4: Modern Fresh (Forest Green)
+%   Clean geometric Roboto, deep forest green accents
+% \documentclass[color=forest,divider=rule,bullet=dash,margin=standard,font=roboto]{michael-resume}
+
+% Look 5: Classic Monochrome (100% Traditional ATS Safe)
+%   Timeless black-and-white layout with zero color accents
+% \documentclass[color=monochrome,divider=rule,bullet=dash,margin=standard,font=charter]{michael-resume}
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% HEADER / CONTACT INFORMATION
+% ------------------------------------------------------------------------------
+\name{Michael Zhou}
+\contact{
+  \email{michael@example.com} \hspace{1.5em}
+  (555) 019-2834 \hspace{1.5em}
+  \web[github.com/zhou-michael]{github.com/zhou-michael} \hspace{1.5em}
+  \web[linkedin.com/in/michaelzhou39]{linkedin.com/in/michaelzhou39}
+}
+\makeheader
+
+% ------------------------------------------------------------------------------
+% EDUCATION
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Education}
+  \resumeEntryInline{University of California, Los Angeles (UCLA)}{B.S. in Computer Science, B.S. in Mathematics}{June 2027}{GPA: 3.9x}
+  \resumeNote{\textit{Relevant Coursework: Algorithms \& Complexity, Distributed Systems, Operating Systems, Database Internals}}
+\end{resumeSection}
+
+% ------------------------------------------------------------------------------
+% SKILLS
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Skills}
+  \resumeSkillGroup{Languages}{Python, C++, Go, Rust, Java, TypeScript, SQL, Bash}
+  \resumeSkillGroup{Frameworks \& Cloud}{React, Next.js, Docker, Kubernetes, AWS, PostgreSQL, Redis, GraphQL}
+  \resumeSkillGroup{Systems \& Tools}{Linux, Git, Terraform, GitHub Actions, Prometheus, Kafka, gRPC, CI/CD}
+\end{resumeSection}
+
+% ------------------------------------------------------------------------------
+% EXPERIENCE
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Experience}
+  \resumeEntryInline{Technology Company}{Software Engineering Intern}{June 2024 -- August 2024}{}
+  \begin{resumeItemList}
+    \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit; designed and deployed backend services processing 25k daily requests.}
+    \resumeItem{Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, reducing p95 query latency by 35\% via Redis caching.}
+    \resumeItem{Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+  \end{resumeItemList}
+
+  \resumeEntryInline{Software Corporation}{Software Engineering Intern}{June 2023 -- August 2023}{}
+  \begin{resumeItemList}
+    \resumeItem{Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.}
+    \resumeItem{Engineered interactive operational analytics dashboards with React and TypeScript, increasing reporting throughput by 40\%.}
+    \resumeItem{Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+  \end{resumeItemList}
+
+  \resumeEntryInline{Research Laboratory}{Undergraduate Student Researcher}{January 2023 -- Present}{}
+  \begin{resumeItemList}
+    \resumeItem{Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.}
+    \resumeItem{Benchmarked distributed consensus throughput across simulated cluster environments using Go and synthetic workloads.}
+  \end{resumeItemList}
+\end{resumeSection}
+
+% ------------------------------------------------------------------------------
+% PROJECTS
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Projects}
+  \resumeProject{Distributed Systems Platform}{Open-Source Distributed Engine}{Month Year}
+  \begin{resumeItemList}
+    \resumeItem{Architected a distributed priority queue in Go with RabbitMQ, supporting dynamic worker pool scaling and failure recovery.}
+    \resumeItem{At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.}
+  \end{resumeItemList}
+
+  \resumeProject{Full-Stack Web Platform}{Collaborative Workspace Tool}{Month Year}
+  \begin{resumeItemList}
+    \resumeItem{Integrated semantic vector search with PostgreSQL (pgvector) to deliver sub-second multi-lingual document retrieval.}
+    \resumeItem{Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.}
+  \end{resumeItemList}
+\end{resumeSection}
+
+% ------------------------------------------------------------------------------
+% LEADERSHIP & ACTIVITIES
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Leadership}
+  \resumeEntryInline{Student Technical Society}{President / Technical Director}{September 2023 -- Present}{}
+  \begin{resumeItemList}
+    \resumeItem{Coordinated annual 36-hour collegiate hackathon with 400+ attendees and \$30,000 in corporate sponsorship funding.}
+    \resumeItem{Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.}
+  \end{resumeItemList}
+\end{resumeSection}
+
+% ------------------------------------------------------------------------------
+% HONORS & CERTIFICATIONS
+% ------------------------------------------------------------------------------
+\begin{resumeSection}{Honors \& Certifications}
+  \resumeInlineList{
+    Collegiate Programming Competition Finalist \pipe
+    Hackathon 1st Place Overall \pipe
+    Dean's Honors List (All Semesters) \pipe
+    National Merit Scholar
+  }
+\end{resumeSection}
+
+\end{document}
